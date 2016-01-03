@@ -36,6 +36,7 @@ from guts import context
 from guts import exception
 from guts.i18n import _, _LE, _LI, _LW
 from guts import objects
+from guts.objects import service as serv
 from guts.objects import base as objects_base
 from guts import rpc
 from guts import version
@@ -143,7 +144,7 @@ class Service(service.Service):
         self.manager.init_host()
         ctxt = context.get_admin_context()
         try:
-            service_ref = objects.Service.get_by_args(
+            service_ref = serv.Service.get_by_args(
                 ctxt, self.host, self.binary)
             self.service_id = service_ref.id
         except exception.NotFound:
