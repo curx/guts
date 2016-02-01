@@ -21,7 +21,6 @@ inline callbacks.
 
 """
 
-import copy
 import logging
 import os
 import shutil
@@ -247,7 +246,7 @@ class TestCase(testtools.TestCase):
                                          '..',
                                      )
                                  ),
-                                 'cinder/tests/unit/policy.json'),
+                                 'guts/tests/unit/policy.json'),
                              group='oslo_policy')
 
         self._disable_osprofiler()

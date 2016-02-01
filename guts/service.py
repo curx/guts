@@ -36,8 +36,8 @@ from guts import context
 from guts import exception
 from guts.i18n import _, _LE, _LI, _LW
 from guts import objects
-from guts.objects import service as serv
 from guts.objects import base as objects_base
+from guts.objects import service as serv
 from guts import rpc
 from guts import version
 from guts.wsgi import common as wsgi_common

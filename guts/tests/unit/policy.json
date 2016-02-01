@@ -4,5 +4,6 @@
     "admin_or_owner":  "is_admin:True or project_id:%(project_id)s",
 
     "guts:create": "",
-    "guts:get": "rule:admin_or_owner"
+    "guts:get": "rule:admin_or_owner",
+    "migration_extension:types_manage": ""
 }
