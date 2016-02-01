@@ -30,7 +30,7 @@ CONF = cfg.CONF
 _KNOWN_VERSIONS = {
     "v1.0": {
         "id": "v1.0",
-        "status": "SUPPORTED",
+        "status": "CURRENT",
         "updated": "2014-06-28T12:20:21Z",
         "links": [
             {
