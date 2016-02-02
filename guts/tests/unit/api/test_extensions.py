@@ -13,15 +13,12 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-import iso8601
-from lxml import etree
 from oslo_config import cfg
 from oslo_serialization import jsonutils
 import webob
 
 from guts.api import extensions
 from guts.api.v1 import router
-from guts.api import xmlutil
 from guts import test
 
 
@@ -47,7 +44,6 @@ class ExtensionControllerTest(ExtensionTestCase):
         super(ExtensionControllerTest, self).setUp()
         self.ext_list = ["TypesManage", "TypesExtraSpecs", ]
         self.ext_list.sort()
-
 
     def test_get_extension_json(self):
         app = router.APIRouter()
